@@ -18,7 +18,7 @@ class Scraper
 
       student_name = student_card.css(".student-name").text
       student_location = student_card.css(".student-location").text
-      student_url = student_card.css("a")[:href]
+   #   student_url = student_card.css("a")[:href]
       
       result << {:name => student_name, :location => student_location, :profile_url => student_url}
     end
